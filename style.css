@@ -1,0 +1,288 @@
+ /* ========= VARIÁVEIS ========= */
+    :root {
+      --bg: #f8f9fa;
+      --text: #222;
+      --primary: #4cafef;
+      --secondary: #7f5af0;
+      --card: #ffffff;
+      --muted: #555;
+    }
+
+    [data-theme="dark"] {
+      --bg: #0d1117;
+      --text: #e6edf3;
+      --primary: #58a6ff;
+      --secondary: #9b79ff;
+      --card: #161b22;
+      --muted: #aaa;
+    }
+    :root {
+  --bg: #f8f9fa;
+  --text: #222;
+  --primary: #4cafef;
+  --secondary: #7f5af0;
+  --card: #ffffff;
+  --muted: #555;
+
+  /* Novas variáveis para o menu hambúrguer */
+  --menu-bg: #ffffff;    /* fundo menu claro */
+  --menu-text: #222;     /* texto menu claro */
+}
+
+[data-theme="dark"] {
+  --bg: #0d1117;
+  --text: #e6edf3;
+  --primary: #58a6ff;
+  --secondary: #9b79ff;
+  --card: #161b22;
+  --muted: #aaa;
+
+  /* Novas variáveis para o menu hambúrguer no dark */
+  --menu-bg: #161b22;    /* fundo menu dark */
+  --menu-text: #e6edf3;  /* texto menu dark */
+}
+
+    /* ========= ESTILO GERAL ========= */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* ========= CABEÇALHO ========= */
+    header {
+      background: var(--card);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+    }
+
+    .brand {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: var(--primary);
+    }
+
+    nav a {
+      margin-left: 15px;
+      padding: 6px 10px;
+      border-radius: 8px;
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    /* ========= BOTÃO TEMA ========= */
+    .theme-toggle {
+      cursor: pointer;
+      border: none;
+      background: var(--primary);
+      color: #fff;
+      padding: 8px 14px;
+      border-radius: 8px;
+      transition: 0.2s;
+    }
+
+    .theme-toggle:hover {
+      opacity: 0.9;
+    }
+
+    /* ========= HERO ========= */
+    .hero {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      align-items: center;
+      gap: 40px;
+      padding: 60px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.4rem;
+      margin-bottom: 15px;
+    }
+
+    .hero span {
+      color: var(--primary);
+    }
+
+    .hero p {
+      margin-bottom: 20px;
+      color: var(--muted);
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--secondary);
+      color: #fff;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      opacity: 0.85;
+      transform: translateY(-2px);
+    }
+
+    .hero img {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+
+    /* ========= SEÇÃO BENEFÍCIOS ========= */
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .card {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    /* ========= RODAPÉ ========= */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: var(--card);
+      margin-top: 40px;
+      color: var(--muted);
+    }
+
+    /* ====== Estilos gerais do nav ====== */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* ====== Botão Hambúrguer ====== */
+.hamburger {
+  display: none; /* escondido por padrão */
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: var(--menu-bg); /* agora depende do tema */
+    flex-direction: column;
+    width: 200px;
+    padding: 1rem;
+    border-left: 1px solid #ccc;
+    box-shadow: -2px 2px 5px rgba(0,0,0,0.2);
+    transform: translateX(100%);
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+
+  nav a {
+    color: var(--menu-text); /* usa variável do tema */
+    padding: 0.5rem 0;
+  }
+
+  nav.show {
+    transform: translateX(0);
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--menu-text); /* botão também muda de cor */
+  }
+}
+
+/* ====== Responsividade para telas pequenas ====== */
+@media (max-width: 768px) {
+  /* Esconde o menu normal e mostra o hambúrguer */
+  nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: var(--bg);
+    flex-direction: column;
+    width: 200px;
+    padding: 1rem;
+    border-left: 1px solid #ccc;
+    box-shadow: -2px 2px 5px rgba(0,0,0,0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+
+  nav.show {
+    transform: translateX(0);
+  }
+
+  .hamburger {
+    display: block; /* botão só aparece em telas pequenas */
+  }
+}
+
+    

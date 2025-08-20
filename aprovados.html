@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Química+ Aprovados</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+  <style>
+    /* ========= HERO ========= */
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 180px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff;
+      text-align: center;
+      border-radius: 16px;
+      margin: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 900;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+      margin: 0;
+    }
+
+    /* ========= TABELA DE APROVADOS ========= */
+    .section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 15px 20px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: var(--primary);
+      color: #fff;
+    }
+
+    tr:nth-child(even) {
+      background-color: var(--card);
+    }
+
+    tr:hover {
+      background-color: var(--secondary);
+      color: #fff;
+    }
+
+    @media (max-width: 600px) {
+      th, td {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ========= CABEÇALHO ========= -->
+  <header>
+  <div class="nav container">
+    <div class="brand">⚛️ Química+ Online</div>
+
+    <!-- Botão Hambúrguer (aparece apenas em telas pequenas) -->
+    <button class="hamburger" id="hamburger">☰</button>
+
+    <nav id="nav-links">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="contato.html">Contato</a>
+      <a href="blog.html">Blog</a>
+      <a href="faq.html">FAQ</a>
+      <a href="testemunhos.html">Depoimentos</a>
+      <a href="aprovados.html" class="active">Aprovados </a>
+    </nav>
+
+    <button class="theme-toggle" id="theme-btn">🌙</button>
+  </div>
+</header>
+  <!-- ========= HERO ========= -->
+  <section class="hero">
+    <h1>Aprovados no Ano de 2025</h1>
+  </section>
+
+  <!-- ========= TABELA DE APROVADOS ========= -->
+<section class="section">
+    <table>
+      <tbody>
+        <tr>
+          <td>Maria Silva</td>
+          <td>Medicina</td>
+          <td>USP</td>
+        </tr>
+        <tr>
+          <td>João Santos</td>
+          <td>Engenharia Química</td>
+          <td>Unicamp</td>
+        </tr>
+        <tr>
+          <td>Ana Pereira</td>
+          <td>Farmácia</td>
+          <td>USP</td>
+        </tr>
+        <tr>
+          <td>Lucas Almeida</td>
+          <td>Biomedicina</td>
+          <td>Unesp</td>
+        </tr>
+        <tr>
+          <td>Beatriz Costa</td>
+          <td>Química Industrial</td>
+          <td>Unicamp</td>
+        </tr>
+        <tr>
+          <td>Pedro Oliveira</td>
+          <td>Engenharia de Alimentos</td>
+          <td>UFG</td>
+        </tr>
+        <tr>
+          <td>Carla Martins</td>
+          <td>Nutrição</td>
+          <td>UFG</td>
+        </tr>
+        <tr>
+          <td>Rafael Lima</td>
+          <td>Ciências Biológicas</td>
+          <td>UnB</td>
+        </tr>
+        <tr>
+          <td>Juliana Rocha</td>
+          <td>Química Tecnológica</td>
+          <td>UFV</td>
+        </tr>
+        <tr>
+          <td>Vinícius Sousa</td>
+          <td>Farmácia Industrial</td>
+          <td>UFJF</td>
+        </tr>
+        <tr>
+          <td>Fernanda Araújo</td>
+          <td>Engenharia Ambiental</td>
+          <td>UFG</td>
+        </tr>
+        <tr>
+          <td>Thiago Nascimento</td>
+          <td>Biotecnologia</td>
+          <td>Unicamp</td>
+        </tr>
+        <tr>
+          <td>Larissa Mendes</td>
+          <td>Medicina Veterinária</td>
+          <td>UFMG</td>
+        </tr>
+        <tr>
+          <td>Gustavo Ribeiro</td>
+          <td>Engenharia Química</td>
+          <td>UFGO</td>
+        </tr>
+        <tr>
+          <td>Mariana Alves</td>
+          <td>Farmácia Clínica</td>
+          <td>USP</td>
+        </tr>
+        <tr>
+          <td>Eduardo Santos</td>
+          <td>Biomedicina</td>
+          <td>UFG</td>
+        </tr>
+        <tr>
+          <td>Isabela Ferreira</td>
+          <td>Química Ambiental</td>
+          <td>UFV</td>
+        </tr>
+        <tr>
+          <td>Felipe Costa</td>
+          <td>Engenharia de Alimentos</td>
+          <td>Unicamp</td>
+        </tr>
+        <tr>
+          <td>Camila Souza</td>
+          <td>Nutrição</td>
+          <td>UFG</td>
+        </tr>
+        <tr>
+          <td>Bruno Lima</td>
+          <td>Ciências Biológicas</td>
+          <td>UFJF</td>
+        </tr>
+        <tr>
+          <td>Patrícia Martins</td>
+          <td>Química Industrial</td>
+          <td>UnB</td>
+        </tr>
+        <tr>
+          <td>Rômulo Henrique</td>
+          <td>Farmácia</td>
+          <td>USP</td>
+        </tr>
+        <tr>
+          <td>Viviane Castro</td>
+          <td>Biotecnologia</td>
+          <td>UFMG</td>
+        </tr>
+      </tbody>
+      
+    </table>
+  </section>
+
+  <!-- ========= RODAPÉ ========= -->
+  <footer>
+    <p>© 2025 Química+ Online - Todos os direitos reservados</p>
+  </footer>
+
+  
+ <!-- ========= SCRIPT ========= -->
+  <script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Menu hambúrguer
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  if(hamburger && navLinks){
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  }
+
+  // Troca de tema
+  const btn = document.querySelector('.theme-toggle');
+  if(btn){
+    // Verifica se o usuário já tem uma preferência salva
+    let currentTheme = localStorage.getItem('theme') || 'dark';
+    document.body.setAttribute('data-theme', currentTheme);
+    btn.textContent = currentTheme === 'light' ? '☀️' : '🌙';
+
+    btn.addEventListener('click', () => {
+      // Alterna o tema
+      if(document.body.getAttribute('data-theme') === 'light'){
+        document.body.setAttribute('data-theme', 'dark');
+        btn.textContent = '🌙';
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.body.setAttribute('data-theme', 'light');
+        btn.textContent = '☀️';
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  }
+});
+</script>
+</body>
+</html>

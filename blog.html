@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Química+ Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+  <style>
+    /* ====== HERO ====== */
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff;
+      border-radius: 16px;
+      margin: 20px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    /* ====== LISTA DE POSTS ====== */
+    .blog-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .blog-post {
+      background: var(--card);
+      padding: 20px 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+      border-left: 6px solid var(--primary);
+    }
+
+    .blog-post:hover {
+      transform: translateY(-3px);
+    }
+
+    .blog-post h2 {
+      margin: 0 0 10px;
+      font-size: 1.5rem;
+      color: var(--primary);
+    }
+
+    .blog-post time {
+      display: block;
+      font-size: 0.9rem;
+      color: gray;
+      margin-bottom: 10px;
+    }
+
+    .blog-post p {
+      margin: 0;
+      color: var(--text);
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <!-- ========= CABEÇALHO ========= -->
+   <header>
+  <div class="nav container">
+    <div class="brand">⚛️ Química+ Online</div>
+
+    <!-- Botão Hambúrguer (aparece apenas em telas pequenas) -->
+    <button class="hamburger" id="hamburger">☰</button>
+
+    <nav id="nav-links">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="contato.html">Contato</a>
+      <a href="blog.html">Blog</a>
+      <a href="faq.html">FAQ</a>
+      <a href="testemunhos.html">Depoimentos</a>
+      <a href="aprovados.html" class="active">Aprovados </a>
+    </nav>
+
+    <button class="theme-toggle" id="theme-btn">🌙</button>
+  </div>
+</header>
+  <!-- ========= HERO ========= -->
+  <section class="hero">
+    <h1>Blog de Química</h1>
+  </section>
+
+  <!-- ========= POSTS ========= -->
+  <section class="blog-container">
+    <article class="blog-post">
+      <h2>Por que o sal derrete o gelo?</h2>
+      <time datetime="2025-08-10">10 de Agosto de 2025</time>
+      <p>
+        Quando adicionamos sal ao gelo, o ponto de fusão da água é reduzido, 
+        fazendo o gelo derreter mais rápido. Essa reação é um exemplo clássico 
+        de como substâncias podem alterar propriedades físicas de outras.
+      </p>
+    </article>
+  
+    <article class="blog-post">
+      <h2>O mistério das cores no fogo</h2>
+      <time datetime="2025-08-05">5 de Agosto de 2025</time>
+      <p>
+        Queima de diferentes elementos químicos produz cores únicas: 
+        sódio gera amarelo, cobre dá verde e potássio, lilás. 
+        Esse fenômeno é usado em fogos de artifício e análises de laboratório.
+      </p>
+    </article>
+  
+    <article class="blog-post">
+      <h2>Química da cafeína</h2>
+      <time datetime="2025-07-30">30 de Julho de 2025</time>
+      <p>
+        A cafeína age como estimulante ao bloquear receptores de adenosina no cérebro. 
+        Por isso, ela nos deixa mais alertas, mas em excesso pode causar ansiedade e insônia.
+      </p>
+    </article>
+  
+    <!-- NOVOS POSTS -->
+    <article class="blog-post">
+      <h2>Como funciona a fotossíntese?</h2>
+      <time datetime="2025-07-20">20 de Julho de 2025</time>
+      <p>
+        A fotossíntese é o processo pelo qual plantas convertem luz solar em energia química, 
+        produzindo oxigênio e glicose. É fundamental para a vida na Terra.
+      </p>
+    </article>
+  
+    <article class="blog-post">
+      <h2>pH e sua importância</h2>
+      <time datetime="2025-07-15">15 de Julho de 2025</time>
+      <p>
+        O pH mede a acidez ou alcalinidade de uma solução. 
+        Substâncias com pH baixo são ácidas, enquanto as com pH alto são básicas. 
+        É essencial para processos biológicos e químicos.
+      </p>
+    </article>
+  
+    <article class="blog-post">
+      <h2>O que é eletrólise?</h2>
+      <time datetime="2025-07-10">10 de Julho de 2025</time>
+      <p>
+        Eletrólise é um processo que usa eletricidade para decompor substâncias químicas, 
+        como a separação de água em hidrogênio e oxigênio. Muito utilizada em laboratórios e indústrias.
+      </p>
+    </article>
+  
+    <article class="blog-post">
+      <h2>Química nos cosméticos</h2>
+      <time datetime="2025-07-05">5 de Julho de 2025</time>
+      <p>
+        Muitos cosméticos utilizam compostos químicos como conservantes, emolientes e fragrâncias. 
+        Entender a química por trás deles ajuda a fazer escolhas mais seguras e conscientes.
+      </p>
+    </article>
+  
+    <article class="blog-post">
+      <h2>Como os corantes alimentares funcionam</h2>
+      <time datetime="2025-07-01">1 de Julho de 2025</time>
+      <p>
+        Corantes alimentares são substâncias químicas que dão cor a alimentos e bebidas. 
+        Podem ser naturais ou artificiais, e cada tipo tem sua estabilidade e reatividade.
+      </p>
+    </article>
+  </section>
+  
+
+  <!-- ========= RODAPÉ ========= -->
+  <footer>
+    <p>© 2025 Química+ Online - Todos os direitos reservados</p>
+  </footer>
+
+<!-- ========= SCRIPT ========= -->
+  <script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Menu hambúrguer
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  if(hamburger && navLinks){
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  }
+
+  // Troca de tema
+  const btn = document.querySelector('.theme-toggle');
+  if(btn){
+    // Verifica se o usuário já tem uma preferência salva
+    let currentTheme = localStorage.getItem('theme') || 'dark';
+    document.body.setAttribute('data-theme', currentTheme);
+    btn.textContent = currentTheme === 'light' ? '☀️' : '🌙';
+
+    btn.addEventListener('click', () => {
+      // Alterna o tema
+      if(document.body.getAttribute('data-theme') === 'light'){
+        document.body.setAttribute('data-theme', 'dark');
+        btn.textContent = '🌙';
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.body.setAttribute('data-theme', 'light');
+        btn.textContent = '☀️';
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  }
+});
+</script>
+</body>
+</html>

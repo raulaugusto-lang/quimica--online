@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursinho Química Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+  <style>
+    /* ========= HERO ========= */
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 180px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff;
+      text-align: center;
+      border-radius: 16px;
+      margin: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 900;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+      margin: 0;
+    }
+
+    /* ========= DEPOIMENTOS ESTILO TWITTER ========= */
+    .testimonials {
+      max-width: 900px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 0 20px;
+    }
+
+    .testimonial-card {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .testimonial-text {
+      font-style: normal;
+      color: var(--text);
+      margin-bottom: 15px;
+    }
+
+    .testimonial-user {
+      font-weight: bold;
+      color: var(--primary);
+    }
+
+    .testimonial-handle {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- ========= CABEÇALHO ========= -->
+  <header>
+   <div class="nav container">
+    <div class="brand">⚛️ Química+ Online</div>
+
+    <!-- Botão Hambúrguer (aparece apenas em telas pequenas) -->
+    <button class="hamburger" id="hamburger">☰</button>
+
+    <nav id="nav-links">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="contato.html">Contato</a>
+      <a href="blog.html">Blog</a>
+      <a href="faq.html">FAQ</a>
+      <a href="testemunhos.html">Depoimentos</a>
+      <a href="aprovados.html" class="active">Aprovados</a>
+    </nav>
+
+    <button class="theme-toggle" id="theme-btn">🌙</button>
+  </div>
+</header>
+
+  <section class="hero">
+  <h1 style="color: #fff;">O que os alunos estão dizendo no X</h1>
+</section>
+
+<!-- ========= DEPOIMENTOS ========= -->
+<section class="section">
+  <div class="testimonials container">
+    <div class="testimonial-card">
+      <p class="testimonial-text">"Nunca achei química tão fácil! As aulas do Química+ Online salvaram meus estudos."</p>
+      <span class="testimonial-user">Maria Silva</span> <span class="testimonial-handle">@mariasilva</span>
+    </div>
+
+    <div class="testimonial-card">
+      <p class="testimonial-text">"Professores super didáticos e explicações claras. Recomendo 100%!"</p>
+      <span class="testimonial-user">João Santos</span> <span class="testimonial-handle">@joaosantos</span>
+    </div>
+
+    <div class="testimonial-card">
+      <p class="testimonial-text">"Material atualizado e aulas interativas. Estudar online nunca foi tão eficiente."</p>
+      <span class="testimonial-user">Ana Pereira</span> <span class="testimonial-handle">@anapereira</span>
+    </div>
+
+    <div class="testimonial-card">
+      <p class="testimonial-text">"Consegui melhorar minhas notas e entender química de verdade com esse curso."</p>
+      <span class="testimonial-user">Lucas Almeida</span> <span class="testimonial-handle">@lucasalmeida</span>
+    </div>
+
+    <div class="testimonial-card">
+      <p class="testimonial-text">"As videoaulas são muito claras e objetivas. Estou adorando!"</p>
+      <span class="testimonial-user">Beatriz Costa</span> <span class="testimonial-handle">@beatrizcosta</span>
+    </div>
+
+    <div class="testimonial-card">
+      <p class="testimonial-text">"O suporte é incrível! Tirei todas as minhas dúvidas rapidamente."</p>
+      <span class="testimonial-user">Pedro Lima</span> <span class="testimonial-handle">@pedrolima</span>
+    </div>
+
+    <div class="testimonial-card">
+      <p class="testimonial-text">"Recomendo para todos que querem estudar de forma eficiente e prática."</p>
+      <span class="testimonial-user">Carla Mendes</span> <span class="testimonial-handle">@carlamendes</span>
+    </div>
+
+    <div class="testimonial-card">
+      <p class="testimonial-text">"Meu desempenho melhorou muito depois que comecei o curso. Excelente conteúdo!"</p>
+      <span class="testimonial-user">Rafael Souza</span> <span class="testimonial-handle">@rafaelsouza</span>
+    </div>
+  </div>
+</section>
+
+  <!-- ========= RODAPÉ ========= -->
+  <footer>
+    <p>© 2025 Química+ Online - Todos os direitos reservados</p>
+  </footer>
+
+  <!-- ========= SCRIPT MODO CLARO/ESCURO ========= -->
+  <script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Menu hambúrguer
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  if(hamburger && navLinks){
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  }
+
+  // Troca de tema
+  const btn = document.querySelector('.theme-toggle');
+  if(btn){
+    // Verifica se o usuário já tem uma preferência salva
+    let currentTheme = localStorage.getItem('theme') || 'dark';
+    document.body.setAttribute('data-theme', currentTheme);
+    btn.textContent = currentTheme === 'light' ? '☀️' : '🌙';
+
+    btn.addEventListener('click', () => {
+      // Alterna o tema
+      if(document.body.getAttribute('data-theme') === 'light'){
+        document.body.setAttribute('data-theme', 'dark');
+        btn.textContent = '🌙';
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.body.setAttribute('data-theme', 'light');
+        btn.textContent = '☀️';
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  }
+});
+</script>
+</body>
+</html>

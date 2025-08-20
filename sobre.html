@@ -1,0 +1,246 @@
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursinho Química Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+  <style>
+
+    /* Centralizando o hero sem imagem */
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 220px; /* maior altura */
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff;
+      text-align: center;
+      border-radius: 16px;
+      margin: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .hero h1 {
+      font-size: 3rem; /* maior fonte */
+      font-weight: 900;
+      letter-spacing: 1px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.3); /* sombra sutil */
+      margin: 0;
+      line-height: 1.2;
+    }
+
+    /* Ajuste para cards da equipe */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+      text-align: center;
+    }
+
+    .team-photo {
+      width: 100%;
+      height: 280px; /* altura fixa para todas */
+      object-fit: cover; /* corta sem distorcer */
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+  </style><style>
+  /* ===== VARIÁVEIS DE CORES ===== */
+  :root {
+    --bg: #121212;        /* fundo padrão dark */
+    --text: #f5f5f5;      /* texto dark */
+    --card: #1e1e1e;      /* card dark */
+    --primary: #4cafef;
+    --secondary: #7f5af0;
+  }
+
+  /* Modo claro */
+  [data-theme="light"] {
+    --bg: #f8f9fa;
+    --text: #222;
+    --card: #ffffff;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+
+  /* Cards agora seguem o tema */
+  .card {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+    color: var(--text);
+  }
+
+  /* Hero continua com gradiente, mas texto ajusta */
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: #fff;
+    text-align: center;
+    border-radius: 16px;
+    margin: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+
+  h1, h2, h3, p {
+    transition: color 0.3s;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .team-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+</style>
+</head>
+<body>
+  <header>
+   <div class="nav container">
+    <div class="brand">⚛️ Química+ Online</div>
+
+    <!-- Botão Hambúrguer (aparece apenas em telas pequenas) -->
+    <button class="hamburger" id="hamburger">☰</button>
+
+    <nav id="nav-links">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="contato.html">Contato</a>
+      <a href="blog.html">Blog</a>
+      <a href="faq.html">FAQ</a>
+      <a href="testemunhos.html">Depoimentos</a>
+      <a href="aprovados.html" class="active">Aprovados </a>
+    </nav>
+
+    <button class="theme-toggle" id="theme-btn">🌙</button>
+  </div>
+</header>
+  <!-- ========= HERO CENTRAL ========= -->
+  <section class="hero">
+    <h1>Sobre Química+ Online</h1>
+  </section>
+
+  <!-- ========= SEÇÃO MISSÃO, VISÃO E VALORES ========= -->
+  <section class="section">
+    <h2>Nossa Missão, Visão e Valores</h2>
+    <div class="grid container">
+      <div class="card">
+        <h3>🎯 Missão</h3>
+        <p>Oferecer ensino de química acessível, moderno e eficiente, ajudando alunos a alcançarem seus objetivos acadêmicos.</p>
+      </div>
+      <div class="card">
+        <h3>🌟 Visão</h3>
+        <p>Ser referência nacional em cursinhos online de química, inovando sempre com tecnologia e didática de qualidade.</p>
+      </div>
+      <div class="card">
+        <h3>💡 Valores</h3>
+        <p>Compromisso com o aluno, excelência no conteúdo, acessibilidade, inovação e ética no ensino.</p>
+      </div>
+    </div>
+    <section class="section">
+  <h2>Metodologia de Ensino</h2>
+  <div class="grid container">
+    <div class="card">
+      <h3>📚 Aulas Interativas</h3>
+      <p>Explicações dinâmicas com exemplos práticos e exercícios para fixação do conteúdo.</p>
+    </div>
+    <div class="card">
+      <h3>🧪 Laboratórios Virtuais</h3>
+      <p>Simulações de experimentos para reforçar conceitos teóricos sem precisar de laboratório físico.</p>
+    </div>
+    <div class="card">
+      <h3>💻 Plataforma Online</h3>
+      <p>Conteúdos disponíveis a qualquer hora, com vídeos, quizzes e acompanhamento de desempenho.</p>
+    </div>
+  </div>
+</section>
+
+ 
+
+  <!-- ========= SEÇÃO NOSSA EQUIPE ========= -->
+  <section class="section">
+    <h2>Conheça nossos professores</h2>
+    <div class="grid container">
+      <div class="card">
+        <img src="pipe.png" alt="Prof. Felipe" class="team-photo">
+        <h3>👨‍🏫 Prof. Felipe Fernandes</h3>
+        <p>Especialista em química orgânica e professor com mais de 10 anos de experiência.</p>
+      </div>
+      <div class="card">
+        <img src="raul.png" alt="Prof. Raul" class="team-photo">
+        <h3>👨‍🏫 Prof. Raul Augusto</h3>
+        <p>Química inorgânica e físico-química, apaixonado por ensino e inovação.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= RODAPÉ ========= -->
+  <footer>
+    <p>© 2025 Química+ Online - Todos os direitos reservados</p>
+  </footer>
+
+   <!-- ========= SCRIPT ========= -->
+ <script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Menu hambúrguer
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  if(hamburger && navLinks){
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  }
+
+  // Troca de tema
+  const btn = document.querySelector('.theme-toggle');
+  if(btn){
+    // Verifica se o usuário já tem uma preferência salva
+    let currentTheme = localStorage.getItem('theme') || 'dark';
+    document.body.setAttribute('data-theme', currentTheme);
+    btn.textContent = currentTheme === 'light' ? '☀️' : '🌙';
+
+    btn.addEventListener('click', () => {
+      // Alterna o tema
+      if(document.body.getAttribute('data-theme') === 'light'){
+        document.body.setAttribute('data-theme', 'dark');
+        btn.textContent = '🌙';
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.body.setAttribute('data-theme', 'light');
+        btn.textContent = '☀️';
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  }
+});
+</script>
+</body>
+</html>

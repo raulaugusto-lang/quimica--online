@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursinho Química Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+  <style>
+    /* ========= HERO ========= */
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff;
+      text-align: center;
+      border-radius: 16px;
+      margin: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 900;
+      letter-spacing: 1px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+      margin: 0;
+      line-height: 1.2;
+    }
+
+    /* ========= SEÇÃO SERVIÇOS ========= */
+
+
+   /* ========= SEÇÃO SERVIÇOS ========= */
+.card {
+  background: var(--card); /* fundo padrão do tema */
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s, color 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card i {
+  font-size: 2.5rem;
+  color: var(--secondary);
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: var(--text); /* preto no modo claro, branco no escuro */
+}
+
+.card p {
+  color: var(--text); /* mantém o mesmo padrão de cor */
+  font-size: 1rem;
+}
+ .section {
+    padding: 50px 20px; /* Mais espaçamento em cima e embaixo da seção */
+  }
+
+  .section h2 {
+    margin-bottom: 40px; /* Espaço maior entre título e cards */
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px; /* Espaço maior entre os cards */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .card {
+    padding: 30px; /* Mais espaço interno */
+  }
+
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+  <!-- Ícones Font Awesome -->
+  <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+  <div class="nav container">
+    <div class="brand">⚛️ Química+ Online</div>
+
+    <!-- Botão Hambúrguer (aparece apenas em telas pequenas) -->
+    <button class="hamburger" id="hamburger">☰</button>
+
+    <nav id="nav-links">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="contato.html">Contato</a>
+      <a href="blog.html">Blog</a>
+      <a href="faq.html">FAQ</a>
+      <a href="testemunhos.html">Depoimentos</a>
+      <a href="aprovados.html" class="active">Aprovados </a>
+    </nav>
+
+    <button class="theme-toggle" id="theme-btn">🌙</button>
+  </div>
+</header>
+
+  <!-- ========= HERO ========= -->
+  <section class="hero">
+    <h1>Nossos Cursos e Serviços</h1>
+  </section>
+
+  <!-- ========= SEÇÃO SERVIÇOS ========= -->
+  <section class="section">
+  <h2 style="text-align: center;">O que oferecemos</h2>
+  <div class="services-grid">
+    <div class="card">
+      <i class="fas fa-flask"></i>
+      <h3>Química Geral</h3>
+      <p>Aulas completas de química geral com exercícios práticos e teóricos, preparatório para ENEM e vestibulares.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-atom"></i>
+      <h3>Química Orgânica</h3>
+      <p>Exploração detalhada de reações orgânicas, mecanismos e síntese, com exemplos do dia a dia.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-vial"></i>
+      <h3>Química Inorgânica</h3>
+      <p>Conteúdos focados em metais, sais e ácidos, com exercícios e explicações claras.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-chalkboard-teacher"></i>
+      <h3>Aulas ao Vivo</h3>
+      <p>Participação em aulas online interativas com nossos professores experientes.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-book"></i>
+      <h3>Material de Apoio</h3>
+      <p>Apostilas, exercícios e simulados atualizados para reforçar seu aprendizado.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-laptop"></i>
+      <h3>Plataforma Online</h3>
+      <p>Estude de qualquer lugar, com acesso a vídeo aulas, fóruns e suporte digital 24/7.</p>
+    </div>
+    <!-- Novos cards -->
+    <div class="card">
+      <i class="fas fa-lightbulb"></i>
+      <h3>Consultorias Personalizadas</h3>
+      <p>Atendimento individualizado para tirar dúvidas e receber orientações específicas de estudo.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-award"></i>
+      <h3>Simulados e Testes</h3>
+      <p>Provas simuladas com correção detalhada para avaliar seu desempenho e progresso.</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ========= RODAPÉ ========= -->
+  <footer>
+    <p>© 2025 Química+ Online - Todos os direitos reservados</p>
+  </footer>
+
+  <!-- ========= SCRIPT MODO CLARO/ESCURO ========= -->
+   <script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Menu hambúrguer
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  if(hamburger && navLinks){
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  }
+
+  // Troca de tema
+  const btn = document.querySelector('.theme-toggle');
+  if(btn){
+    // Verifica se o usuário já tem uma preferência salva
+    let currentTheme = localStorage.getItem('theme') || 'dark';
+    document.body.setAttribute('data-theme', currentTheme);
+    btn.textContent = currentTheme === 'light' ? '☀️' : '🌙';
+
+    btn.addEventListener('click', () => {
+      // Alterna o tema
+      if(document.body.getAttribute('data-theme') === 'light'){
+        document.body.setAttribute('data-theme', 'dark');
+        btn.textContent = '🌙';
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.body.setAttribute('data-theme', 'light');
+        btn.textContent = '☀️';
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  }
+});
+</script>
+</body>
+</html>

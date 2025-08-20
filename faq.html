@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Química+ FAQ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+  <style>
+    /* ========= HERO ========= */
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 180px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff;
+      text-align: center;
+      border-radius: 16px;
+      margin: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 900;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+      margin: 0;
+    }
+
+    /* ========= ACORDEÃO ========= */
+    .accordion {
+      max-width: 800px;
+      margin: 40px auto;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .accordion-item {
+      background: var(--card);
+      border-bottom: 1px solid #ccc;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .accordion-item:last-child {
+      border-bottom: none;
+    }
+
+    .accordion-header {
+      padding: 15px 20px;
+      cursor: pointer;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--text);
+      transition: background 0.2s;
+    }
+
+    .accordion-header:hover {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 20px;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      color: var(--text);
+    }
+
+    .accordion-content p {
+      padding: 10px 0;
+      line-height: 1.5;
+    }
+
+    .accordion-header::after {
+      content: "➕";
+      transition: transform 0.3s;
+    }
+
+    .accordion-header.active::after {
+      content: "➖";
+      transform: rotate(180deg);
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ========= CABEÇALHO ========= -->
+  <header>
+  <div class="nav container">
+    <div class="brand">⚛️ Química+ Online</div>
+
+    <!-- Botão Hambúrguer (aparece apenas em telas pequenas) -->
+    <button class="hamburger" id="hamburger">☰</button>
+
+    <nav id="nav-links">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="contato.html">Contato</a>
+      <a href="blog.html">Blog</a>
+      <a href="faq.html">FAQ</a>
+      <a href="testemunhos.html">Depoimentos</a>
+      <a href="aprovados.html" class="active">Aprovados </a>
+    </nav>
+
+    <button class="theme-toggle" id="theme-btn">🌙</button>
+  </div>
+</header>
+  <!-- ========= HERO ========= -->
+  <section class="hero">
+    <h1>Perguntas Frequentes</h1>
+  </section>
+
+  <!-- ========= ACORDEÃO ========= -->
+  <section class="section">
+    <div class="accordion container">
+      <div class="accordion-item">
+        <div class="accordion-header">Como funciona o curso online?</div>
+        <div class="accordion-content">
+          <p>O curso é totalmente online, com aulas em vídeo, materiais de estudo e exercícios interativos. Você pode acessar de qualquer lugar, a qualquer hora.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">Quais materiais estão disponíveis?</div>
+        <div class="accordion-content">
+          <p>Disponibilizamos PDFs, slides, simulados e listas de exercícios atualizados conforme o ENEM e vestibulares mais recentes.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">Qual é a forma de pagamento?</div>
+        <div class="accordion-content">
+          <p>Aceitamos cartão de crédito, boleto bancário e PIX. Os planos podem ser mensais ou trimestrais.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">Como acesso as aulas?</div>
+        <div class="accordion-content">
+          <p>Após o cadastro e pagamento, você receberá um login e senha para acessar a plataforma online pelo computador ou celular.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">O curso oferece certificado?</div>
+        <div class="accordion-content">
+          <p>Sim! Ao concluir os módulos do curso, você receberá um certificado digital válido para comprovação de aprendizado.</p>
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <div class="accordion-header">Posso tirar dúvidas com os professores?</div>
+        <div class="accordion-content">
+          <p>Sim, disponibilizamos um canal de suporte online onde você pode enviar dúvidas e receber respostas de nossos professores especializados.</p>
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <div class="accordion-header">É possível pausar o curso?</div>
+        <div class="accordion-content">
+          <p>Sim, você pode pausar e retomar os estudos quando quiser, sem perder o progresso já realizado.</p>
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <div class="accordion-header">Há descontos para grupos ou escolas?</div>
+        <div class="accordion-content">
+          <p>Sim! Oferecemos pacotes especiais para grupos e instituições de ensino. Entre em contato com nossa equipe para mais informações.</p>
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <div class="accordion-header">O curso é adequado para iniciantes?</div>
+        <div class="accordion-content">
+          <p>Sim, o curso foi planejado para atender desde alunos iniciantes até avançados, com explicações passo a passo e exercícios graduais.</p>
+        </div>
+      </div>      
+    </div>
+  </section>
+
+  <!-- ========= RODAPÉ ========= -->
+  <footer>
+    <p>© 2025 Química+ Online - Todos os direitos reservados</p>
+  </footer>
+
+  <!-- ========= SCRIPT MODO CLARO/ESCURO ========= -->
+ <script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Menu hambúrguer
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  if(hamburger && navLinks){
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  }
+
+  // Troca de tema
+  const btn = document.querySelector('.theme-toggle');
+  if(btn){
+    // Verifica se o usuário já tem uma preferência salva
+    let currentTheme = localStorage.getItem('theme') || 'dark';
+    document.body.setAttribute('data-theme', currentTheme);
+    btn.textContent = currentTheme === 'light' ? '☀️' : '🌙';
+
+    btn.addEventListener('click', () => {
+      // Alterna o tema
+      if(document.body.getAttribute('data-theme') === 'light'){
+        document.body.setAttribute('data-theme', 'dark');
+        btn.textContent = '🌙';
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.body.setAttribute('data-theme', 'light');
+        btn.textContent = '☀️';
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  }
+});
+</script>
+  </script>
+</body>
+</html>

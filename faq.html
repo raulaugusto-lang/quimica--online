@@ -227,6 +227,34 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+document.addEventListener('DOMContentLoaded', () => {
+  const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+  accordionHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+      const currentlyActive = document.querySelector('.accordion-header.active');
+      
+      // Fechar o item que já está aberto (se for outro)
+      if (currentlyActive && currentlyActive !== header) {
+        currentlyActive.classList.remove('active');
+        currentlyActive.nextElementSibling.style.maxHeight = null;
+        currentlyActive.nextElementSibling.style.padding = '0 20px';
+      }
+
+      // Alternar o item clicado
+      header.classList.toggle('active');
+      const content = header.nextElementSibling;
+
+      if (header.classList.contains('active')) {
+        content.style.maxHeight = content.scrollHeight + 'px';
+        content.style.padding = '10px 20px';
+      } else {
+        content.style.maxHeight = null;
+        content.style.padding = '0 20px';
+      }
+    });
+  });
+});
 </script>
   </script>
 </body>
